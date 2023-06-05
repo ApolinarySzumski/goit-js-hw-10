@@ -1,3 +1,4 @@
+import choices from 'choices.js';
 import Notiflix from 'notiflix';
 import { fetchBreeds } from './cat-api';
 import { fetchCatByBreed } from './cat-api';
@@ -7,9 +8,8 @@ const breedSelect = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
 
-// const result = select(breedSelect);
-
-
+const choices = new Choices(breedSelect);
+console.log(choices);
 
 function createOptions(obj) {
   breedSelect.insertAdjacentHTML(

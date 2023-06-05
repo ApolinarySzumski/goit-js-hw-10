@@ -21,6 +21,7 @@
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6",
     "select": "^1.1.2",
+    "select2": "^4.1.0-rc.0",
     "slim-select": "^2.5.0"
   },
   "devDependencies": {

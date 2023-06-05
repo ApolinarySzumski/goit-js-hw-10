@@ -7,7 +7,9 @@ const breedSelect = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
 
-const result = select(breedSelect);
+// const result = select(breedSelect);
+
+
 
 function createOptions(obj) {
   breedSelect.insertAdjacentHTML(

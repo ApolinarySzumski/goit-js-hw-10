@@ -51,9 +51,9 @@ breedSelect.addEventListener('change', event => {
   fetchCatByBreed(event.target.value)
     .then(data => {
       fillCatInfo(data);
+      toggleLoader();
     })
     .catch(err => {
       showError(err);
     });
-  toggleLoader();
 });

@@ -28,14 +28,8 @@ function fillCatInfo(obj) {
   );
 }
 
-function showLoader() {
-  loader.classList.add('loader-visible');
-  loader.classList.remove('loader');
-}
-
-function hideLoader() {
-  loader.classList.add('loader');
-  loader.classList.remove('loader-visible');
+function toggleLoader() {
+  loader.classList.toggle('loader-visible');
 }
 
 function showError(err) {
@@ -53,7 +47,7 @@ fetchBreeds(POSTS_PATH)
 breedSelect.addEventListener('change', event => {
   event.preventDefault();
   catInfo.innerHTML = '';
-  showLoader();
+  toggleLoader();
   fetchCatByBreed(event.target.value)
     .then(data => {
       fillCatInfo(data);
@@ -61,5 +55,5 @@ breedSelect.addEventListener('change', event => {
     .catch(err => {
       showError(err);
     });
-  hideLoader();
+  toggleLoader;
 });

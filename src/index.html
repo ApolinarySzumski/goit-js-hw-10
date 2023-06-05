@@ -8,14 +8,14 @@
       .loader {
         position: absolute;
         top: 50px;
-        left: 77px;
+        left: 58px;
         width: 48px;
         height: 48px;
         border-width: 3px;
         border-style: dashed solid solid dotted;
         border-color: #ff3d00 #ff3d00 transparent #ff3d00;
         border-radius: 50%;
-        display: inline-block;
+        display: none;
         box-sizing: border-box;
         animation: rotation 1s linear infinite;
       }
@@ -37,6 +37,9 @@
         100% {
           transform: rotate(360deg);
         }
+      }
+      .loader-visible {
+        display: inline-block;
       }
       .error {
         display: none;

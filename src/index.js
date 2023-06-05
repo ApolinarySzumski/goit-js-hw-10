@@ -55,5 +55,5 @@ breedSelect.addEventListener('change', event => {
     .catch(err => {
       showError(err);
     });
-  toggleLoader;
+  toggleLoader();
 });

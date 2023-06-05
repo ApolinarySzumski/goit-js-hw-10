@@ -21,7 +21,7 @@ export function fetchBreeds(url, query) {
 export function fetchCatByBreed(breedId) {
   return new Promise((resolve, reject) => {
     fetch(
-      `https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}&api_key=live_rZzH8aTSb8EgvoUpMxGnwE4BaOpFs1yxswJogZfxRC4o5Mo0oZR6Pv4xvrcRihcn`
+      `https://api.thecatapi.com/v1/imaes/search?breed_ids=${breedId}&api_key=live_rZzH8aTSb8EgvoUpMxGnwE4BaOpFs1yxswJogZfxRC4o5Mo0oZR6Pv4xvrcRihcn`
     )
       .then(response => {
         if (!response.ok) {

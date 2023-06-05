@@ -1,4 +1,4 @@
-
+import Notiflix from 'notiflix';
 import { fetchBreeds } from './cat-api';
 import { fetchCatByBreed } from './cat-api';
 
@@ -34,7 +34,9 @@ function toggleLoader() {
 }
 
 function showError(err) {
-  error.classList.toggle('error');
+  Notiflix.Notify.failure(
+    'Oops! Something went wrong! Try reloading the page!'
+  );
 }
 
 fetchBreeds(POSTS_PATH)

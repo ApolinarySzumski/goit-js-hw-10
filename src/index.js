@@ -1,5 +1,10 @@
+import SlimSelect from 'slim-select';
 import { fetchBreeds } from './cat-api';
 import { fetchCatByBreed } from './cat-api';
+
+new SlimSelect({
+  select: '#select',
+});
 
 const POSTS_PATH = 'https://api.thecatapi.com/v1/breeds';
 const breedSelect = document.querySelector('.breed-select');
